@@ -21,8 +21,8 @@
 title: Nghia T. Le
 email: nle18@gatech.edu
 # description: >- # this means to ignore newlines until "baseurl:"
-# baseurl: "" # the subpath of your site, e.g. /blog
-# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://nle18.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  nle18
 
 # Build settings
