@@ -4,9 +4,9 @@
 
 layout: home
 ---
-<!-- <head>
+<head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head> -->
+</head>
 
 <div id="container" style="padding-bottom: 50px;">
 	<img src="headshot.jpg" width="200" height="200" style="padding-right: 20px; float: left;">
