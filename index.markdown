@@ -19,7 +19,7 @@ layout: home
 	</p>
 </div>
 
-<h2>Biography and Research Interests</h2>
+<h1>Biography and Research Interests</h1>
 
 <p>I am currently a first-year PhD student in Computer Science at Georgia Institute of Technology.
 	My research interest is procedural text understanding. That is, enabling virtual assistants
@@ -31,7 +31,7 @@ layout: home
 	and Ph.D. student Renato Negrinho.
 </p>
 
-<h2>Publications</h2>
+<h1>Publications</h1>
 
 <ul>
 	<li>
