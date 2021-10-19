@@ -50,4 +50,4 @@ theme: minima
 #   - vendor/gems/
 #   - vendor/ruby/
 
-remote_theme: gaalcaras/academic
+# remote_theme: gaalcaras/academic
