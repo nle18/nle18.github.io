@@ -11,9 +11,7 @@ layout: home
 
 	<p> Email: nle18@gatech.edu <br>
 	Office: Coda 1183P <br>
-	<a href="https://github.com/nle18">
-	<i class="fa fa-github" style="font-size:36px"></i>
-	</a>
+	<a href="https://github.com/nle18"><i class="fa fa-github" style="font-size:36px"></i></a>
 	</p>
 </div>
 
