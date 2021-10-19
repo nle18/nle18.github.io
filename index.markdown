@@ -4,6 +4,10 @@
 
 layout: home
 ---
+<head>
+	<title>Nghia T. Le</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
 <div id="container" style="padding-bottom: 50px;">
 	<img src="headshot.jpg" width="200" height="200" style="padding-right: 20px; float: left;">
@@ -12,6 +16,8 @@ layout: home
 
 	<p> Email: nle18@gatech.edu <br>
 	Office: Coda 1183P <br>
+	<!-- <a href="https://github.com/nle18"><i class="fa fa-github" style="font-size:36px"></i></a>
+	</p> -->
 </div>
 
 <h2>Biography and Research Interests</h2>
