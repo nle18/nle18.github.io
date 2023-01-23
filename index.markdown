@@ -21,24 +21,33 @@ layout: home
 
 <h1>Biography and Research Interests</h1>
 
-<p>I am currently a first-year PhD student in Computer Science at Georgia Institute of Technology.
+<p>I am currently a second-year PhD student in Computer Science at Georgia Institute of Technology.
 	My research interest is procedural text understanding. That is, enabling virtual assistants
 	to understand natural language instructions so that they can assist us humans in
 	carrying out specific tasks (e.g. cooking instructions, wet lab protocols, sorting email)</p>
 
 <p>Prior to Georgia Tech, I obtained my B.S. and M.S. at Carnegie Mellon University (CMU),
-	where I had the pleasure to be advised by Professors Matt Gormley, Tom Mitchell,
-	and Ph.D. student Renato Negrinho.
+	where I had the pleasure to be advised by professor Matt Gormley  and professor Tom Mitchell.
 </p>
 
 <h1>Publications</h1>
 
 <ul>
 	<li>
-		<p><a href="https://proceedings.neurips.cc/paper/2019/file/4ab50afd6dcc95fcba76d0fe04295632-Paper.pdf">
-				Towards Modular and Programmable Architecture Search
+		<p>Few-shot Anaphora Resolution in Scientific Protocols via Mixture of In-context Experts
 			</a><br>
-		Renato Negrinho, Darshan Patil, <u>Nghia Le</u>, Daniel Ferreira, Matthew R. Gormley,
+		<u>Nghia T. Le</u>, Fan Bai, Alan Ritter<br>
+		<em>Findings of EMNLP 2022</em><br>
+		[<a href="https://arxiv.org/abs/2210.03690">
+				Paper
+			</a>] [<a href="https://github.com/nle/mice">
+				Code
+			</a>] </p>
+	</li>
+	<li>
+		<p>Towards Modular and Programmable Architecture Search
+			</a><br>
+		Renato Negrinho, Darshan Patil, <u>Nghia T. Le</u>, Daniel Ferreira, Matthew R. Gormley,
 			Geoffrey Gordon.<br>
 		<em>NeurIPS 2019</em><br>
 		[<a href="https://proceedings.neurips.cc/paper/2019/file/4ab50afd6dcc95fcba76d0fe04295632-Paper.pdf">
