@@ -53,7 +53,7 @@ layout: home
 		Renato Negrinho, Darshan Patil, <u>Nghia T. Le</u>, Daniel Ferreira, Matthew R. Gormley,
 			Geoffrey Gordon.<br>
 		<em>NeurIPS 2019</em><br>
-		[<a href="https://proceedings.neurips.cc/paper/2019/file/4ab50afd6dcc95fcba76d0fe04295632-Paper.pdf"style="text-decoration: none"> 
+		[<a href="https://proceedings.neurips.cc/paper/2019/file/4ab50afd6dcc95fcba76d0fe04295632-Paper.pdf" style="text-decoration: none"> 
 				Paper
 			</a>] [<a href="https://github.com/negrinho/deep_architect" style="text-decoration: none">
 				Code
