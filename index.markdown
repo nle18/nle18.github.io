@@ -21,7 +21,7 @@ layout: home
 
 <h1>Biography and Research Interests</h1>
 
-<p>I am currently a second-year PhD student in Computer Science at Georgia Institute of Technology.
+<p>I am currently a second-year PhD student in Computer Science at Georgia Institute of Technology, advised by professor <a href="http://aritter.github.io/" style="text-decoration: none">Alan Ritter</a>.
 	My current research interest is procedural text understanding. Specifically, I am investigating the effectiveness of pretrained large language models for the tasks of anaphora and coreference resolution in procedural texts (e.g., chemical protocols). 
 	
 <!--	That is, enabling virtual assistants
@@ -41,9 +41,9 @@ layout: home
 			<br>
 		<u>Nghia T. Le</u>, Fan Bai, Alan Ritter<br>
 		<em>Findings of EMNLP 2022</em><br>
-		[<a href="https://arxiv.org/abs/2210.03690">
+		[<a href="https://arxiv.org/abs/2210.03690" style="text-decoration: none">
 				Paper
-			</a>] [<a href="https://github.com/nle/mice">
+			</a>] [<a href="https://github.com/nle/mice" style="text-decoration: none">
 				Code
 			</a>] </p>
 	</li>
@@ -53,9 +53,9 @@ layout: home
 		Renato Negrinho, Darshan Patil, <u>Nghia T. Le</u>, Daniel Ferreira, Matthew R. Gormley,
 			Geoffrey Gordon.<br>
 		<em>NeurIPS 2019</em><br>
-		[<a href="https://proceedings.neurips.cc/paper/2019/file/4ab50afd6dcc95fcba76d0fe04295632-Paper.pdf">
+		[<a href="https://proceedings.neurips.cc/paper/2019/file/4ab50afd6dcc95fcba76d0fe04295632-Paper.pdf"style="text-decoration: none"> 
 				Paper
-			</a>] [<a href="https://github.com/negrinho/deep_architect">
+			</a>] [<a href="https://github.com/negrinho/deep_architect" style="text-decoration: none">
 				Code
 			</a>] </p>
 	</li>
