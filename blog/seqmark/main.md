@@ -9,9 +9,9 @@ Nghia T. Le (in collaboration with Alan Ritter and Kartik Goyal)
  
 Table of Content:
 * [Introduction](#introduction)
-* [Token-level Watermarking and Text Entropy](#token-level-watermarking-text-entropy-under-utilization)
+* [Token-level Watermarking and Text Entropy](#token-level-watermarking-and-text-entropy)
 * [Sequence-level Watermarking: Region Collapse and SeqMark](#sequence-level-text-watermarking-region-collapse-and-seqmark)
-* [Further Discussion](#discussion-open-questions--limitations-)
+* [Further Discussion](#further-discussion)
 * [Citation](#citation)
 
 ---
@@ -49,7 +49,7 @@ much fewer token steps with high-enough entropy for watermarking. Consider the f
         width: 180px; 
     }
 </style>
-<h4></h4><p><b>German</b>: New York ist als die Stadt bekannt, die niemals schläft</p><p><b>English</b>: <span style='background-color: rgba(255, 176, 66, 1.0); color: black' class="hoverable"data-hover-content="nobody: 0.0083
+<p><b>German</b>: New York ist als die Stadt bekannt, die niemals schläft</p><p><b>English</b>: <span style='background-color: rgba(255, 176, 66, 1.0); color: black' class="hoverable" data-hover-content="nobody: 0.0083
  фев: 0.0072
  Hinweis: 0.0071
  everybody: 0.0067
@@ -59,7 +59,7 @@ much fewer token steps with high-enough entropy for watermarking. Consider the f
  Einzeln: 0.0046
  сайт: 0.0040
 nahm: 0.0038
-"> New</span><span style='background-color: rgba(255, 176, 66, 0.005390980963238809); color: black' class="hoverable"data-hover-content="York: 0.9949
+"> New</span><span style='background-color: rgba(255, 176, 66, 0.005390980963238809); color: black' class="hoverable" data-hover-content="York: 0.9949
  y: 0.0018
 y: 0.0009
 Y: 0.0004
@@ -69,7 +69,7 @@ Y: 0.0004
 ark: 0.0001
  Jersey: 0.0001
 </s>: 0.0001
-"> York</span><span style='background-color: rgba(255, 176, 66, 0.0327434324864075); color: black' class="hoverable"data-hover-content="is: 0.9396
+"> York</span><span style='background-color: rgba(255, 176, 66, 0.0327434324864075); color: black' class="hoverable" data-hover-content="is: 0.9396
  City: 0.0439
  has: 0.0084
 ,: 0.0020
@@ -79,7 +79,7 @@ ark: 0.0001
  as: 0.0002
 ers: 0.0001
  gets: 0.0001
-"> is</span><span style='background-color: rgba(255, 176, 66, 0.11604020184359765); color: black' class="hoverable"data-hover-content="known: 0.7861
+"> is</span><span style='background-color: rgba(255, 176, 66, 0.11604020184359765); color: black' class="hoverable" data-hover-content="known: 0.7861
  famous: 0.0896
  well: 0.0265
  ren: 0.0230
@@ -89,7 +89,7 @@ ers: 0.0001
  a: 0.0045
  often: 0.0037
  inf: 0.0033
-"> known</span><span style='background-color: rgba(255, 176, 66, 0.040193369837399934); color: black' class="hoverable"data-hover-content="as: 0.9301
+"> known</span><span style='background-color: rgba(255, 176, 66, 0.040193369837399934); color: black' class="hoverable" data-hover-content="as: 0.9301
  for: 0.0449
  to: 0.0107
  by: 0.0034
@@ -99,7 +99,7 @@ ers: 0.0001
  col: 0.0007
  the: 0.0006
  all: 0.0004
-"> as</span><span style='background-color: rgba(255, 176, 66, 0.07614935667604043); color: black' class="hoverable"data-hover-content="the: 0.8551
+"> as</span><span style='background-color: rgba(255, 176, 66, 0.07614935667604043); color: black' class="hoverable" data-hover-content="the: 0.8551
  a: 0.0759
  ': 0.0231
  ': 0.0108
@@ -109,7 +109,7 @@ ers: 0.0001
  City: 0.0011
  ‘: 0.0009
  one: 0.0008
-"> the</span><span style='background-color: rgba(255, 176, 66, 0.02592359023275274); color: black' class="hoverable"data-hover-content="city: 0.9630
+"> the</span><span style='background-color: rgba(255, 176, 66, 0.02592359023275274); color: black' class="hoverable" data-hover-content="city: 0.9630
  City: 0.0158
  ': 0.0075
  place: 0.0051
@@ -119,7 +119,7 @@ ers: 0.0001
  never: 0.0005
  Big: 0.0002
  “: 0.0001
-"> City</span><span style='background-color: rgba(255, 176, 66, 0.08255140499712434); color: black' class="hoverable"data-hover-content="that: 0.6610
+"> City</span><span style='background-color: rgba(255, 176, 66, 0.08255140499712434); color: black' class="hoverable" data-hover-content="that: 0.6610
  That: 0.3272
 That: 0.0010
  Never: 0.0008
@@ -129,7 +129,7 @@ that: 0.0006
  of: 0.0005
 -: 0.0004
  where: 0.0004
-"> That</span><span style='background-color: rgba(255, 176, 66, 0.003627511860913247); color: black' class="hoverable"data-hover-content="Never: 0.9961
+"> That</span><span style='background-color: rgba(255, 176, 66, 0.003627511860913247); color: black' class="hoverable" data-hover-content="Never: 0.9961
  Does: 0.0022
  never: 0.0006
 N: 0.0003
@@ -139,7 +139,7 @@ N: 0.0003
  (: 0.0001
 ': 0.0001
  Always: 0.0000
-"> Never</span><span style='background-color: rgba(255, 176, 66, 0.006222259292701012); color: black' class="hoverable"data-hover-content="S: 0.9946
+"> Never</span><span style='background-color: rgba(255, 176, 66, 0.006222259292701012); color: black' class="hoverable" data-hover-content="S: 0.9946
  St: 0.0014
  sle: 0.0007
  Sl: 0.0002
@@ -149,7 +149,7 @@ S: 0.0001
  Sh: 0.0001
  C: 0.0001
  L: 0.0001
-"> S</span><span style='background-color: rgba(255, 176, 66, 0.09956700946417466); color: black' class="hoverable"data-hover-content="le: 0.8253
+"> S</span><span style='background-color: rgba(255, 176, 66, 0.09956700946417466); color: black' class="hoverable" data-hover-content="le: 0.8253
 leep: 0.0926
 its: 0.0269
 ets: 0.0149
@@ -159,7 +159,7 @@ we: 0.0015
 .: 0.0014
 LE: 0.0009
 ells: 0.0008
-">le</span><span style='background-color: rgba(255, 176, 66, 0.21622956736395796); color: black' class="hoverable"data-hover-content="eps: 0.7851
+">le</span><span style='background-color: rgba(255, 176, 66, 0.21622956736395796); color: black' class="hoverable" data-hover-content="eps: 0.7851
 ets: 0.0138
 ems: 0.0103
 </s>: 0.0096
@@ -171,7 +171,7 @@ E: 0.0033
 .: 0.0032
 ">eps</span></p>
 
-In this example, the token steps with higher entropy are highlighted with a darker shade \footnote{we compute token entropy at step i: $H(x_i | x_{<i}) = -\sum_{v\in V} P(x_i\mid x_{<i}; \theta) \log P(x_i\mid x_{<i}; \theta)$ over all token v in vocabulary V with (translation fine-tuned) language model =ALMA-7B (cite)} (we also show top-10 most probable tokens and their probabilities). We can see that a few tokens have notable entropy ("New", "known", "That", "eps"), 
+In this example, the token steps with higher entropy are highlighted with a darker shade (we compute token entropy at step i: $$H(x_i | x_{<i}) = -\sum_{v\in V} P(x_i\mid x_{<i}; \theta) \log P(x_i\mid x_{<i}; \theta)$$ over all token v in vocabulary V with translation fine-tuned language model ALMA-7B; we also show top-10 most probable tokens and their probabilities). We can see that a few tokens have notable entropy ("New", "known", "That", "eps"), 
 with the first token having the highest value, while the rest are essentially deterministic.
 Token-level watermarking approaches are therefore constrained to these few tokens high entropy tokens. In contrast, consider the following possible translation sequences: 
 ```
