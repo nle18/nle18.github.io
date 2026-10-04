@@ -2,6 +2,7 @@
 layout: default      # use whatever layout your other pages use
 permalink: /blog/seqmark/
 ---
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 # SeqMark: Semantic Differentiation for Watermarking Low-Entropy Text
 by Nghia T. Le (in collaboration with Alan Ritter and Kartik Goyal)
@@ -172,7 +173,7 @@ E: 0.0033
 .: 0.0032
 ">eps</span></p>
 
-In this example, the token steps with higher entropy are highlighted with a darker shade (we compute token entropy at step i: $$H(x_i | x_{<i}) = -\sum_{v\in V} P(x_i\mid x_{<i}; \theta) \log P(x_i\mid x_{<i}; \theta)$$ over all token v in vocabulary V with translation fine-tuned language model ALMA-7B; we also show top-10 most probable tokens and their probabilities). We can see that a few tokens have notable entropy ("New", "known", "That", "eps"), 
+In this example, the token steps with higher entropy are highlighted with a darker shade (we compute token entropy at step i: $$H(x_i | x_{\lt i}) = -\sum_{v\in V} P(x_i\mid x_{\lt i}; \theta) \log P(x_i\mid x_{\lt i}; \theta)$$ over all token v in vocabulary V with translation fine-tuned language model ALMA-7B; we also show top-10 most probable tokens and their probabilities). We can see that a few tokens have notable entropy ("New", "known", "That", "eps"), 
 with the first token having the highest value, while the rest are essentially deterministic.
 Token-level watermarking approaches are therefore constrained to these few tokens high entropy tokens. In contrast, consider the following possible translation sequences: 
 ```
