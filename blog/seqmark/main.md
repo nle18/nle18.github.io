@@ -1,12 +1,14 @@
 ---
 layout: default      # use whatever layout your other pages use
-title: "SeqMark: Semantic Differentiation for Watermarking Low-Entropy Text"
+# title: "SeqMark: Semantic Differentiation for Watermarking Low-Entropy Text"
 permalink: /blog/seqmark/
 ---
 
 # SeqMark: Semantic Differentiation for Watermarking Low-Entropy Text
-Nghia T. Le (in collaboration with Alan Ritter and Kartik Goyal)
- 
+by *Nghia T. Le* (in collaboration with Alan Ritter and Kartik Goyal)
+
+---
+
 Table of Content:
 * [Introduction](#introduction)
 * [Token-level Watermarking and Text Entropy](#token-level-watermarking-and-text-entropy)
@@ -198,6 +200,7 @@ allows for more randomness when watermarking constrained generation tasks. Empir
   Figure 1: Text Detection vs. Text Quality for three watermarking algorithms on machine translation: token-level KGW (blue), sequence-level SemStamp (orange), and our work SeqMark (green)</figcaption>
 </figure>
 
+
 However, it turns out that sequence-level text watermarking has a critical issue of its own when watermarking constrained generation tasks: *region collapse*.
 
 ---
@@ -234,14 +237,14 @@ We summarize the main results in Table 1 below. Across four different constraine
 
 
 ---
-### Further Discussion
+## Further Discussion
 
 In this blog post, we introduce SeqMark, a sequence-level text watermarking algorithm for constrained generation. We demonstrate that for these types of tasks, sequence-level watermarking is more effective than token-level watermarking, yet still affected by the problem of region collapse. SeqMark successfully alleviates this issue and shows significant watermark detection accuracy across different constrained generation tasks.
 
 Despite its effectiveness, the development of SeqMark raises several open questions: 
-- Computational Efficiency: sequence-level watermarking algorithms such as SeqMark are less efficient than token-level watermarking, due to the sampling of candidate sequences step. How to improve the computational efficiency of sequence-level watermarking is an open question. 
+- **Computational Efficiency**: sequence-level watermarking algorithms such as SeqMark are less efficient than token-level watermarking, due to the sampling of candidate sequences step. How to improve the computational efficiency of sequence-level watermarking is an open question. 
 
-- Approximation and Transformation of the High-quality Manifold: Currently, SeqMark approximates this manifold by sampling candidate sequences, and transforms it by subtracting their embeddings from the mean embedding. One limitation of this approach is that it requires saving the mean embeddings for the detection step, which could be cumbersome to store. In general, SeqMark would benefit from approaches that improve the approximation and transformation of this high-quality subspace.
+- **Approximation and Transformation of the High-quality Manifold**: Currently, SeqMark approximates this manifold by sampling candidate sequences, and transforms it by subtracting their embeddings from the mean embedding. One limitation of this approach is that it requires saving the mean embeddings for the detection step, which could be cumbersome to store. In general, SeqMark would benefit from approaches that improve the approximation and transformation of this high-quality subspace.
 
 We wish to explore these questions further in future work. 
 
