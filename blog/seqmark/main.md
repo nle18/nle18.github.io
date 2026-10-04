@@ -192,7 +192,7 @@ New York is famous for never sleeping.
 ...
 ```
 Watermarking algorithms that utilize selection over the above set of (infinite) sequences would theoretically leverage more randomness for effective watermarking. We posit that this is where sequence-level watermarking algorithms like [SemStamp](https://arxiv.org/abs/2310.03991) have an advantage over token-level watermarking: the utilization of the (infinite) sequence embedding space 
-allows for more randomness when watermarking constrained generation tasks. Empirically, in Figure 1 below we observe that sequence-level watermarking [SemStamp](https://arxiv.org/abs/2310.03991) (orange) achieves a higher Pareto frontier for higher-quality translations than the token-level algorithm [KGW](https://arxiv.org/abs/2301.10226) (blue): 
+allows for more randomness when watermarking constrained generation tasks. Empirically, in Figure 1 below we observe that sequence-level watermarking SemStamp (orange) achieves a higher Pareto frontier for higher-quality translations than the token-level algorithm [KGW](https://arxiv.org/abs/2301.10226) (blue): 
 
 <figure style="margin: 0 auto; text-align: center;">
   <img src="./figures/wmt19_pareto_frontiers_mean_var.png" alt="Text detection vs. text quality on WMT19" style="display: block; width: 75%; margin: 0 auto;">

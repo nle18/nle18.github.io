@@ -3,21 +3,20 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: "Home"
 ---
 <head>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <div id="container" style="padding-bottom: 50px;">
 	<img src="headshot.jpg" width="200" height="200" style="padding-right: 20px; float: left;">
-
 	<h2>Nghia T. Le (Max)</h2>
-
-	<p> Email: nle18@gatech.edu <br>
-	<a href="https://github.com/nle18"><i class="fa fa-github" style="font-size:36px"></i></a>
+	<p>Email: nle18@gatech.edu<br>
+	<a href="https://github.com/nle18" aria-label="GitHub"><i class="fa-brands fa-github" style="font-size:36px"></i></a>
+	<a href="https://scholar.google.com/citations?user=Nic9DiwAAAAJ" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap" style="font-size:36px"></i></a>
+	<a href="https://x.com/maxle1828" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter" style="font-size:36px"></i></a>
 	</p>
-	Twitter ?
-	Google Scholar
 </div>
 
 <h1>Biography and Research Interests</h1>
@@ -33,26 +32,25 @@ layout: home
 
 <ul>
 	<li>
-		<p>Semantic Differentiation for Tackling Challenges in Watermarking Low-Entropy Constrained Generation Outputs</b><br>
+		<p>Semantic Differentiation for Tackling Challenges in Watermarking Low-Entropy Constrained Generation Outputs<br>
 		<u>Nghia T. Le</u>, Alan Ritter, Kartik Goyal<br>
 		<em> COLM 2026</em><br>
-		[<a href="https://arxiv.org/abs/2210.03690" style="text-decoration: none">
-				Paper
-			</a>] [<a href="https://github.com/nle/mice" style="text-decoration: none">
-				Code
-			</a>] [<a href="https://nle18.github.io/blog/seqmark" style="text-decoration: none">
-				Blog
-			</a>]
+		[<a href="https://arxiv.org/abs/2601.11629" style="text-decoration: none">
+			Paper
+		</a>] [<a href="https://github.com/nle/seqmark" style="text-decoration: none">
+			Code
+		</a>] [<a href="https://nle18.github.io/blog/seqmark" style="text-decoration: none">
+			Blog
+		</a>]
 		</p>
 	</li>
-
 	<li>
-		<p>Are Language Models Robust Coreference Resolvers?			</a><br>
+		<p>Are Language Models Robust Coreference Resolvers?<br>
 		<u>Nghia T. Le</u> and Alan Ritter<br>
 		<em>COLM 2024</em><br>
-		[<a href="#">
+		[<a href="https://openreview.net/pdf?id=MmBQSNHKUl">
 				Paper
-			</a>] [<a href=#">
+			</a>] [<a href=https://github.com/nle18/coref-llms">
 				Code
 			</a>] </p>
 	</li>
