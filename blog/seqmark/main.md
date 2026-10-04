@@ -16,7 +16,6 @@ Table of Content:
 
 ---
 
-
 ### Introduction
 
 The proliferation of AI-generated content has created an urgent need for digital watermarking approaches that can robustly track provenance ([Srinivasan et al.](https://www.brookings.edu/articles/detecting-ai-fingerprints-a-guide-to-watermarking-and-beyond/)). There have been various efforts to create robust and imperceptible text watermarking methods ([Kirchenbauer et al.](https://arxiv.org/abs/2301.10226), [Aaronson](https://scottaaronson.blog/?p=9333), see survey by [Liu et al.](https://doi.org/10.1145/3691626)). Major LLM providers have also begun implementing watermarking in production ([SynthID](https://deepmind.google/models/synthid/), [Claude text watermarking](https://www.anthropic.com/news/claude-text-watermark)). Nonetheless, these approaches often struggle with watermarking *low-entropy* constrained generation tasks such as machine translation, code summarization, and code generation, due to the limited randomness available at each token sampling step for these tasks. Researchers have tackled this issue by improving *token-level watermarking* for code generation ([Lee et al.](https://arxiv.org/abs/2305.15060), [Lu et al.](https://arxiv.org/abs/2403.13485)) and translation ([Takezawa et al.](https://arxiv.org/abs/2310.00833)). Interestingly, we find that these approaches still underperform *sequence-level watermarking* ([Hou et al.](https://arxiv.org/abs/2310.03991)), which we hypothesize is due to *entropy under-utilization* in constrained generation tasks. Nonetheless, sequence-level watermarking algorithms suffer from *region collapse*, a problem where the model is often forced to choose between generating high-quality but un-watermarked text or low-quality watermarked text. We thus introduce SeqMark, a sequence-level watermarking algorithm that tackles the region collapse problem by isolating and differentiating the high-quality output space. We observe that SeqMark improves text watermarking performance across different low-entropy scenarios.
@@ -24,7 +23,7 @@ The proliferation of AI-generated content has created an urgent need for digital
 
 
 ---
-### Token-level Watermarking: Text Entropy Under-Utilization (I don't like this title ...)
+### Token-level Watermarking and Text Entropy
 
 Popular LM watermarking algorithms often embed watermark signals at the token level, relying 
 on each token step having high enough entropy (i.e., randomness) to watermark without major degradation in text quality. For constrained generation tasks, this is problematic: there are 
@@ -265,4 +264,3 @@ Or use the BibTeX citation:
   url={https://arxiv.org/abs/2601.11629}
 }
 ```
-
