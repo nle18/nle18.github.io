@@ -9,7 +9,7 @@ title: "Home"
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<div id="container" style="padding-bottom: 50px;">
+<div id="container" style="padding-bottom: 50px; display: flow-root;">
 	<img src="headshot.jpg" width="200" height="200" style="padding-right: 20px; float: left;">
 	<h2>Nghia T. Le (Max)</h2>
 	<p>Email: nle18@gatech.edu</p>
@@ -24,7 +24,7 @@ title: "Home"
 
 <p>I am a PhD student in Computer Science at Georgia Institute of Technology, advised by professors Kartik Goyal and Alan Ritter.
 My current research interest is language model text watermarking and API fingerprinting. Specifically, I investigate text watermarking approaches for constrained generation tasks and for detecting unauthorized knowledge distillation. 
-
+</p>
 
 <p>Prior to Georgia Tech, I obtained my B.S. and M.S. at Carnegie Mellon University, where I had the pleasure to be advised by professor Matt Gormley  and professor Tom Mitchell.
 </p>
@@ -49,7 +49,7 @@ My current research interest is language model text watermarking and API fingerp
 		<p>Are Language Models Robust Coreference Resolvers?<br>
 		<u>Nghia T. Le</u> and Alan Ritter<br>
 		<em>COLM 2024</em><br>
-		[<a href="https://openreview.net/pdf?id=MmBQSNHKUl">
+		[<a href="https://openreview.net/pdf?id=MmBQSNHKUl" style="text-decoration: none">
 			Paper
 		</a>] [<a href="https://github.com/nle18/coref-llms" style="text-decoration: none">
 			Code
