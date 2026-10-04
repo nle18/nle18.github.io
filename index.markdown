@@ -14,14 +14,15 @@ layout: home
 	<h2>Nghia T. Le (Max)</h2>
 
 	<p> Email: nle18@gatech.edu <br>
-	Office: Coda 1183P <br>
 	<a href="https://github.com/nle18"><i class="fa fa-github" style="font-size:36px"></i></a>
 	</p>
+	Twitter ?
+	Google Scholar
 </div>
 
 <h1>Biography and Research Interests</h1>
 
-<p>I am currently a second-year PhD student in Computer Science at Georgia Institute of Technology, advised by professor <a href="http://aritter.github.io/" style="text-decoration: none">Alan Ritter</a>.
+<p>I am a PhD student in Computer Science at Georgia Institute of Technology, advised by professors Kartik Goyal and Alan Ritter.
 	My current research interest is procedural text understanding. Specifically, I am investigating the effectiveness of pretrained large language models for the tasks of anaphora and coreference resolution in procedural texts (e.g., chemical protocols). 
 	
 <!--	That is, enabling virtual assistants
@@ -36,6 +37,30 @@ layout: home
 <h1>Publications</h1>
 
 <ul>
+	<li>
+		<p>Semantic Differentiation for Tackling Challenges in Watermarking Low-Entropy Constrained Generation Outputs</b><br>
+		<u>Nghia T. Le</u>, Alan Ritter, Kartik Goyal<br>
+		<em> COLM 2026</em><br>
+		[<a href="https://arxiv.org/abs/2210.03690" style="text-decoration: none">
+				Paper
+			</a>] [<a href="https://github.com/nle/mice" style="text-decoration: none">
+				Code
+			</a>] [<a href="https://nle18.github.io/blog/seqmark" style="text-decoration: none">
+				Blog
+			</a>] </p>
+		</p>
+	</li>
+
+	<li>
+		<p>Are Language Models Robust Coreference Resolvers?			</a><br>
+		<u>Nghia T. Le</u> and Alan Ritter<br>
+		<em>COLM 2024</em><br>
+		[<a href="#">
+				Paper
+			</a>] [<a href=#">
+				Code
+			</a>] </p>
+	</li>
 	<li>
 		<p>Few-shot Anaphora Resolution in Scientific Protocols via Mixture of In-context Experts
 			<br>
