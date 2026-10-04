@@ -42,7 +42,7 @@ layout: home
 				Code
 			</a>] [<a href="https://nle18.github.io/blog/seqmark" style="text-decoration: none">
 				Blog
-			</a>] </p>
+			</a>]
 		</p>
 	</li>
 

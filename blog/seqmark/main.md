@@ -173,7 +173,7 @@ E: 0.0033
 .: 0.0032
 ">eps</span></p>
 
-In this example, the token steps with higher entropy are highlighted with a darker shade (we compute token entropy at step i: $$H(x_i | x_{\lt i}) = -\sum_{v\in V} P(x_i\mid x_{\lt i}; \theta) \log P(x_i\mid x_{\lt i}; \theta)$$ over all token v in vocabulary V with translation fine-tuned language model ALMA-7B; we also show top-10 most probable tokens and their probabilities). We can see that a few tokens have notable entropy ("New", "known", "That", "eps"), 
+In this example, the token steps with higher entropy are highlighted with a darker shade (we compute token entropy at step $$i$$: $$H(x_i | x_{\lt i}) = -\sum_{v\in V} P(x_i\mid x_{\lt i}; \theta) \log P(x_i\mid x_{\lt i}; \theta)$$ over all token $$v$$ in vocabulary $$V$$ with translation fine-tuned language model ALMA-7B; we also show top-10 most probable tokens and their probabilities). We can see that a few tokens have notable entropy (*"New", "known", "That", "eps"*), 
 with the first token having the highest value, while the rest are essentially deterministic.
 Token-level watermarking approaches are therefore constrained to these few tokens high entropy tokens. In contrast, consider the following possible translation sequences: 
 ```
@@ -213,8 +213,8 @@ Sequence-level watermarking works by (1) partitioning the embedding space into a
   <figcaption style="text-align: left;">Figure 2: Illustrations of Region Collapse in sequence-level watermarking algorithms SemStamp (left) and k-SemStamp (middle). In the ideal semantic space (right), low-quality generations are ignored and only the space of high-quality generations are considered for watermarking.</figcaption>
 </figure>
 
-To alleviate region collapse, our approach SeqMark (Figure 3) first isolates the manifold C of high-probable generations via sampling (i.e., sampling n candidate translations). We then seek a transformation f that minimizes the pairwise cosine similarities between the members of C while preserving their relative proximity. This is difficult to estimate in general and could be approximated by learning such a function via a neural network. We opt for a much simpler choice for f : subtracting
-the sample mean from each member of C. 
+To alleviate region collapse, our approach SeqMark (Figure 3) first isolates the manifold $$C$$ of high-probable generations via sampling (i.e., sampling n candidate translations). We then seek a transformation $$f$$ that minimizes the pairwise cosine similarities between the members of $$C$$ while preserving their relative proximity. This is difficult to estimate in general and could be approximated by learning such a function via a neural network. We opt for a much simpler choice for $$f$$: subtracting
+the sample mean from each member of $$C$$. 
 
 <figure>
   <img src="./figures/approach.png" alt="My Diagram">
