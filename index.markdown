@@ -9,7 +9,7 @@ title: "Home"
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<div id="container" style="padding-bottom: 50px; display: flow-root;">
+<div id="container" style="padding-bottom: 30px; display: flow-root;">
 	<img src="headshot.jpg" width="200" height="200" style="padding-right: 20px; float: left;">
 	<h2>Nghia T. Le (Max)</h2>
 	<p>Email: nle18@gatech.edu</p>
