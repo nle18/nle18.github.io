@@ -24,12 +24,7 @@ layout: home
 
 <p>I am a PhD student in Computer Science at Georgia Institute of Technology, advised by professors Kartik Goyal and Alan Ritter.
 	My current research interest is procedural text understanding. Specifically, I am investigating the effectiveness of pretrained large language models for the tasks of anaphora and coreference resolution in procedural texts (e.g., chemical protocols). 
-	
-<!--	That is, enabling virtual assistants
-	to understand natural language instructions so that they can assist us humans in
-	carrying out specific tasks (e.g. cooking instructions, wet lab protocols, sorting email)-->
-	
-</p>
+
 
 <p>Prior to Georgia Tech, I obtained my B.S. and M.S. at Carnegie Mellon University, where I had the pleasure to be advised by professor Matt Gormley  and professor Tom Mitchell.
 </p>
