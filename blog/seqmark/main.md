@@ -1,11 +1,10 @@
 ---
 layout: default      # use whatever layout your other pages use
-# title: "SeqMark: Semantic Differentiation for Watermarking Low-Entropy Text"
 permalink: /blog/seqmark/
 ---
 
 # SeqMark: Semantic Differentiation for Watermarking Low-Entropy Text
-by *Nghia T. Le* (in collaboration with Alan Ritter and Kartik Goyal)
+by Nghia T. Le (in collaboration with Alan Ritter and Kartik Goyal)
 
 ---
 
