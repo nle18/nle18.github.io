@@ -4,7 +4,7 @@ title: "SeqMark: Semantic Differentiation for Watermarking Low-Entropy Text"
 permalink: /blog/seqmark/
 ---
 
-## SeqMark: Semantic Differentiation for Watermarking Low-Entropy Text
+# SeqMark: Semantic Differentiation for Watermarking Low-Entropy Text
 Nghia T. Le (in collaboration with Alan Ritter and Kartik Goyal)
  
 Table of Content:
@@ -16,14 +16,14 @@ Table of Content:
 
 ---
 
-### Introduction
+## Introduction
 
 The proliferation of AI-generated content has created an urgent need for digital watermarking approaches that can robustly track provenance ([Srinivasan et al.](https://www.brookings.edu/articles/detecting-ai-fingerprints-a-guide-to-watermarking-and-beyond/)). There have been various efforts to create robust and imperceptible text watermarking methods ([Kirchenbauer et al.](https://arxiv.org/abs/2301.10226), [Aaronson](https://scottaaronson.blog/?p=9333), see survey by [Liu et al.](https://doi.org/10.1145/3691626)). Major LLM providers have also begun implementing watermarking in production ([SynthID](https://deepmind.google/models/synthid/), [Claude text watermarking](https://www.anthropic.com/news/claude-text-watermark)). Nonetheless, these approaches often struggle with watermarking *low-entropy* constrained generation tasks such as machine translation, code summarization, and code generation, due to the limited randomness available at each token sampling step for these tasks. Researchers have tackled this issue by improving *token-level watermarking* for code generation ([Lee et al.](https://arxiv.org/abs/2305.15060), [Lu et al.](https://arxiv.org/abs/2403.13485)) and translation ([Takezawa et al.](https://arxiv.org/abs/2310.00833)). Interestingly, we find that these approaches still underperform *sequence-level watermarking* ([Hou et al.](https://arxiv.org/abs/2310.03991)), which we hypothesize is due to *entropy under-utilization* in constrained generation tasks. Nonetheless, sequence-level watermarking algorithms suffer from *region collapse*, a problem where the model is often forced to choose between generating high-quality but un-watermarked text or low-quality watermarked text. We thus introduce SeqMark, a sequence-level watermarking algorithm that tackles the region collapse problem by isolating and differentiating the high-quality output space. We observe that SeqMark improves text watermarking performance across different low-entropy scenarios.
 
 
 
 ---
-### Token-level Watermarking and Text Entropy
+## Token-level Watermarking and Text Entropy
 
 Popular LM watermarking algorithms often embed watermark signals at the token level, relying 
 on each token step having high enough entropy (i.e., randomness) to watermark without major degradation in text quality. For constrained generation tasks, this is problematic: there are 
@@ -192,8 +192,8 @@ New York is famous for never sleeping.
 Watermarking algorithms that utilize selection over the above set of (infinite) sequences would theoretically leverage more randomness for effective watermarking. We posit that this is where sequence-level watermarking algorithms like [SemStamp](https://arxiv.org/abs/2310.03991) have an advantage over token-level watermarking: the utilization of the (infinite) sequence embedding space 
 allows for more randomness when watermarking constrained generation tasks. Empirically, in Figure 1 below we observe that sequence-level watermarking [SemStamp](https://arxiv.org/abs/2310.03991) (orange) achieves a higher Pareto frontier for higher-quality translations than the token-level algorithm [KGW](https://arxiv.org/abs/2301.10226) (blue): 
 
-<figure style="text-align: center;">
-  <img src="./figures/wmt19_pareto_frontiers_mean_var.png" alt="My Diagram" style="width: 75%;">
+<figure style="margin: 0 auto; text-align: center;">
+  <img src="./figures/wmt19_pareto_frontiers_mean_var.png" alt="Text detection vs. text quality on WMT19" style="display: block; width: 75%; margin: 0 auto;">
   <figcaption style="text-align: left;">
   Figure 1: Text Detection vs. Text Quality for three watermarking algorithms on machine translation: token-level KGW (blue), sequence-level SemStamp (orange), and our work SeqMark (green)</figcaption>
 </figure>
@@ -201,7 +201,7 @@ allows for more randomness when watermarking constrained generation tasks. Empir
 However, it turns out that sequence-level text watermarking has a critical issue of its own when watermarking constrained generation tasks: *region collapse*.
 
 ---
-### Sequence-level Text Watermarking: Region Collapse and SeqMark
+## Sequence-level Text Watermarking: Region Collapse and SeqMark
 
 Sequence-level watermarking works by (1) partitioning the embedding space into accepted/valid and rejected/invalid regions, (2) generating and mapping candidate sequences onto the partitioned space (3) selecting the sequences that fall into the accepted regions. The underlying assumption for this method is that similar sequences share similar embeddings. This is problematic when it comes to constrained generation tasks: all the "high-quality" generations risk being partitioned into the invalid regions. For example, for machine translations, if all the correct translations fall into the invalid regions, the model is forced to choose between correct but un-watermarked sequences vs. incorrect but watermarked sequences (Figure 2). We call this problem **Region Collapse**.
 
@@ -222,6 +222,7 @@ We summarize the main results in Table 1 below. Across four different constraine
 
 
 **Table 1.** Utility and watermark detection performance across different tasks. Each entry reports task accuracy / watermark detection performance.
+
 | Method  | Sentence Translation (WMT19) | Paragraph Translation (WMT23) | Summarization (XSUM) | Code Generation (MBPP) |
 |---|---:|---:|---:|---:|
 | No Watermark | 87.4 / - | 87.1 / - | 69.0 / - | 33.8 / - |
@@ -245,7 +246,7 @@ Despite its effectiveness, the development of SeqMark raises several open questi
 We wish to explore these questions further in future work. 
 
 ---
-### Citation
+## Citation
 
 Please cite this work as:
 
