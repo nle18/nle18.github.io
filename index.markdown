@@ -12,17 +12,18 @@ title: "Home"
 <div id="container" style="padding-bottom: 50px;">
 	<img src="headshot.jpg" width="200" height="200" style="padding-right: 20px; float: left;">
 	<h2>Nghia T. Le (Max)</h2>
-	<p>Email: nle18@gatech.edu<br>
-	<a href="https://github.com/nle18" aria-label="GitHub"><i class="fa-brands fa-github" style="font-size:36px"></i></a>
-	<a href="https://scholar.google.com/citations?user=Nic9DiwAAAAJ" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap" style="font-size:36px"></i></a>
-	<a href="https://x.com/maxle1828" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter" style="font-size:36px"></i></a>
-	</p>
+	<p>Email: nle18@gatech.edu</p>
+	<div style="display: flex; gap: 18px; align-items: center;">
+		<a href="https://github.com/nle18" aria-label="GitHub"><i class="fa-brands fa-github" style="font-size:27px"></i></a>
+		<a href="https://scholar.google.com/citations?user=Nic9DiwAAAAJ" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap" style="font-size:27px"></i></a>
+		<a href="https://x.com/maxle1828" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter" style="font-size:27px"></i></a>
+	</div>
 </div>
 
 <h1>Biography and Research Interests</h1>
 
 <p>I am a PhD student in Computer Science at Georgia Institute of Technology, advised by professors Kartik Goyal and Alan Ritter.
-	My current research interest is procedural text understanding. Specifically, I am investigating the effectiveness of pretrained large language models for the tasks of anaphora and coreference resolution in procedural texts (e.g., chemical protocols). 
+My current research interest is language model text watermarking and API fingerprinting. Specifically, I investigate text watermarking approaches for constrained generation tasks and for detecting unauthorized knowledge distillation. 
 
 
 <p>Prior to Georgia Tech, I obtained my B.S. and M.S. at Carnegie Mellon University, where I had the pleasure to be advised by professor Matt Gormley  and professor Tom Mitchell.
@@ -49,10 +50,10 @@ title: "Home"
 		<u>Nghia T. Le</u> and Alan Ritter<br>
 		<em>COLM 2024</em><br>
 		[<a href="https://openreview.net/pdf?id=MmBQSNHKUl">
-				Paper
-			</a>] [<a href=https://github.com/nle18/coref-llms">
-				Code
-			</a>] </p>
+			Paper
+		</a>] [<a href="https://github.com/nle18/coref-llms" style="text-decoration: none">
+			Code
+		</a>] </p>
 	</li>
 	<li>
 		<p>Few-shot Anaphora Resolution in Scientific Protocols via Mixture of In-context Experts
@@ -60,10 +61,10 @@ title: "Home"
 		<u>Nghia T. Le</u>, Fan Bai, Alan Ritter<br>
 		<em>Findings of EMNLP 2022</em><br>
 		[<a href="https://arxiv.org/abs/2210.03690" style="text-decoration: none">
-				Paper
-			</a>] [<a href="https://github.com/nle/mice" style="text-decoration: none">
-				Code
-			</a>] </p>
+			Paper
+		</a>] [<a href="https://github.com/nle/mice" style="text-decoration: none">
+			Code
+		</a>] </p>
 	</li>
 	<li>
 		<p>Towards Modular and Programmable Architecture Search
